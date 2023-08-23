@@ -23,12 +23,12 @@ variables:
   # DO NOT TOUCH
 
   # For pipeline reference
-  # resource_group: rg-$(namespace)-$(postfix)$(environment)
-  # aml_workspace: mlw-$(namespace)-$(postfix)$(environment)
-  # application_insights: mlw-$(namespace)-$(postfix)$(environment)
-  # key_vault: kv-$(namespace)-$(postfix)$(environment)
+  resource_group: aml-github
+  aml_workspace: dev0822
+  application_insights: dev08228019465587
+  key_vault: dev08229624421784
   # container_registry: cr$(namespace)$(postfix)$(environment)
-  # storage_account: st$(namespace)$(postfix)$(environment)
+  storage_account: dev08229504193691
 
   # For terraform reference
   # terraform_version: 0.14.7
