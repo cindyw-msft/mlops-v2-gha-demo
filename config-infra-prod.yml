@@ -7,28 +7,28 @@ variables:
   # Global
   ap_vm_image: ubuntu-20.04
 
-  namespace: dev0822 #Note: A namespace with many characters will cause storage account creation to fail due to storage account names having a limit of 24 characters.
+  namespace: mlw-prod #Note: A namespace with many characters will cause storage account creation to fail due to storage account names having a limit of 24 characters.
   # postfix: mlx
   location: canadacentral
 
-  environment: dev
+  environment: prod
   enable_aml_computecluster: true
   enable_aml_secure_workspace: true
   enable_monitoring: false
 
   # Azure DevOps
-  ado_service_connection_rg: aml-sp-UAT-mlops # service principal name
-  ado_service_connection_aml_ws: aml-sp-UAT-mlops # service principal name
+  ado_service_connection_rg: sp-aml-github-prod # service principal name
+  ado_service_connection_aml_ws: sp-aml-github-prod # service principal name
 
   # DO NOT TOUCH
 
   # For pipeline reference
-  resource_group: aml-github
-  aml_workspace: dev0822
-  application_insights: dev08228019465587
-  key_vault: dev08229624421784
-  container_registry: ca9b7743b0b14617a635f7488e7caa34
-  storage_account: dev08229504193691
+  resource_group: aml-github-prod
+  aml_workspace: mlw-prod
+  application_insights: mlwprod8502637901
+  key_vault: mlwprod6321152617
+  container_registry: crprod082423
+  storage_account: mlwprod6943513838
 
   # For terraform reference
   # terraform_version: 0.14.7

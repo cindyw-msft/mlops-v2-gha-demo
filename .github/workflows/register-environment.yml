@@ -25,20 +25,17 @@ on:
         required: true
 jobs:
   register-environment:
-    # Replace with the label of your self-hosted runner(s)
-    runs-on: ubuntu-latest
+    runs-on: TEST-MLX # Replace with the label of your self-hosted runner(s)
     steps:
       - name: checkout
         uses: actions/checkout@v3
-    
-      - name: "Install Azure CLI"
-        uses: elstudio/action-install-azure-cli@v1
 
       - name: "Az CLI login"
         uses: azure/login@v1
         with:
           creds: ${{secrets.creds}}
           enable-AzPSSession: true
+
       - name: install-extension
         run: az extension add -n ml -y
       - name: update-extension
