@@ -29,7 +29,7 @@ on:
         required: true
 jobs:
   create-compute:
-    runs-on: TEST-MLX
+    runs-on: [self-hosted, windows, x64]
     steps:
       - name: 'Az CLI login'
         uses: azure/login@v1
