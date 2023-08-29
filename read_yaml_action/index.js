@@ -12,6 +12,7 @@ try {
       return;
     }
     console.log(data);
+
     const SCHEMA = yaml.FAILSAFE_SCHEMA;
     const configYaml = yaml.load(data, { schema: SCHEMA }); 
         
@@ -43,6 +44,14 @@ try {
     }
     if(checkGenerateEntity(aml_workspace)){
         aml_workspace = "mlw-"+namespace+"-"+postfix+environment;
+    }
+
+    if(checkGenerateEntity(online_endpoint_name)){
+        online_endpoint_name = "oep-"+namespace+"-"+postfix+environment;
+    }
+
+    if(checkGenerateEntity(batch_endpoint_name)){
+        batch_endpoint_name = "bep-"+namespace+"-"+postfix+environment;
     }
 
     if(checkGenerateEntity(terraform_st_resource_group)){
