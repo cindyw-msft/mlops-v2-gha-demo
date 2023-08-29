@@ -25,11 +25,11 @@ variables:
   # For pipeline reference
   resource_group: aml-github
   aml_workspace: dev0822
+  oep: dev0822oep
   application_insights: dev08228019465587
   key_vault: dev08229624421784
   container_registry: ca9b7743b0b14617a635f7488e7caa34
   storage_account: dev08229504193691
-  oep: dev0822oep
 
   # For terraform reference
   # terraform_version: 0.14.7
