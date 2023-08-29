@@ -6,13 +6,9 @@ name: install-dependencies
 
 jobs:
 
-  install-azure-cli:
+  az-login:
     runs-on: [self-hosted, windows, x64]
-    steps:
-
-    - name: Intall Azure CLI
-      uses: elstudio/action-install-azure-cli@v1
-
+    steps:       
     - name: Azure Login
       uses: azure/login@v1
       with:
