@@ -2,12 +2,12 @@
 on:
   workflow_dispatch:
 
-name: Install Dependencies
+name: install-dependencies
 
 jobs:
 
   install-azure-cli:
-    runs-on: TEST_MLX
+    runs-on: TEST-MLX
     steps:
 
     - name: Intall Azure CLI
