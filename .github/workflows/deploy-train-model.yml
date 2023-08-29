@@ -1,5 +1,5 @@
 # train and deploy to production
-name: deploy-model-training-pipeline-prod
+name: deploy-model-training-pipeline
 
 on: 
   workflow_dispatch:

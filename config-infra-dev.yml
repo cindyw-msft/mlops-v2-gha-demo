@@ -29,6 +29,7 @@ variables:
   key_vault: dev08229624421784
   container_registry: ca9b7743b0b14617a635f7488e7caa34
   storage_account: dev08229504193691
+  oep: dev0822oep
 
   # For terraform reference
   # terraform_version: 0.14.7
