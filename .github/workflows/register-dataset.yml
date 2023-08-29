@@ -24,7 +24,7 @@ on:
         required: true
 jobs:
   register-dataset:
-    runs-on: [self-hosted, windows, x64]
+    runs-on: ubuntu-latest
     steps:
       - name: checkout
         uses: actions/checkout@v3

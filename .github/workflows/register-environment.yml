@@ -25,17 +25,15 @@ on:
         required: true
 jobs:
   register-environment:
-    runs-on: [self-hosted, windows, x64] # Replace with the label of your self-hosted runner(s)
+    runs-on: ubuntu-latest
     steps:
       - name: checkout
         uses: actions/checkout@v3
-
       - name: "Az CLI login"
         uses: azure/login@v1
         with:
           creds: ${{secrets.creds}}
           enable-AzPSSession: true
-
       - name: install-extension
         run: az extension add -n ml -y
       - name: update-extension
