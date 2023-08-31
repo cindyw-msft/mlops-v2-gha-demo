@@ -2,3 +2,4 @@ $schema: https://azuremlschemas.azureedge.net/latest/managedOnlineEndpoint.schem
 name: taxi-fare-online
 description: taxi cost online endpoint
 auth_mode: key
+public_network_access: disabled

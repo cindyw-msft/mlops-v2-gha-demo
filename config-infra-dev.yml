@@ -25,7 +25,6 @@ variables:
   # For pipeline reference
   resource_group: aml-github
   aml_workspace: dev0822
-  oep: dev0822oep
   
   application_insights: dev08228019465587
   key_vault: dev08229624421784
