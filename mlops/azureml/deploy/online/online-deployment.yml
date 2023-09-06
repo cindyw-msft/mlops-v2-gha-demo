@@ -5,4 +5,4 @@ model: azureml:taxi-model@latest
 environment: azureml:taxi-train-env:latest
 instance_type: Standard_DS3_v2
 instance_count: 1
-egress_public_network_access: disabled
+# egress_public_network_access: disabled
