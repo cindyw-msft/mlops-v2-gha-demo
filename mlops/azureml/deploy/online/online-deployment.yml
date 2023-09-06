@@ -2,7 +2,8 @@ $schema: https://azuremlschemas.azureedge.net/latest/managedOnlineDeployment.sch
 name: blue
 endpoint_name: taxi-fare-online
 model: azureml:taxi-model@latest
-environment: azureml:taxi-train-env:latest
+environment:
+  image: mcr.microsoft.com/azureml/openmpi3.1.2-ubuntu18.04
 instance_type: Standard_DS3_v2
 instance_count: 1
 # egress_public_network_access: disabled
